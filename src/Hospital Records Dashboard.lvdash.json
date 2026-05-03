@@ -1,0 +1,783 @@
+{
+  "datasets": [
+    {
+      "name": "d325416b",
+      "displayName": "encounters",
+      "config": {
+        "version": "1.1",
+        "source": "hospital_records_mavena.default.encounters",
+        "dimensions": [
+          {
+            "name": "Id",
+            "expr": "source.Id",
+            "displayName": "Id"
+          },
+          {
+            "name": "START",
+            "expr": "source.START",
+            "displayName": "START"
+          },
+          {
+            "name": "STOP",
+            "expr": "source.STOP",
+            "displayName": "STOP"
+          },
+          {
+            "name": "PATIENT",
+            "expr": "source.PATIENT",
+            "displayName": "PATIENT"
+          },
+          {
+            "name": "ORGANIZATION",
+            "expr": "source.ORGANIZATION",
+            "displayName": "ORGANIZATION"
+          },
+          {
+            "name": "PAYER",
+            "expr": "source.PAYER",
+            "displayName": "PAYER"
+          },
+          {
+            "name": "ENCOUNTERCLASS",
+            "expr": "source.ENCOUNTERCLASS",
+            "displayName": "ENCOUNTERCLASS"
+          },
+          {
+            "name": "CODE",
+            "expr": "source.CODE",
+            "displayName": "CODE"
+          },
+          {
+            "name": "DESCRIPTION",
+            "expr": "source.DESCRIPTION",
+            "displayName": "DESCRIPTION"
+          },
+          {
+            "name": "BASE_ENCOUNTER_COST",
+            "expr": "source.BASE_ENCOUNTER_COST",
+            "displayName": "BASE ENCOUNTER COST"
+          },
+          {
+            "name": "TOTAL_CLAIM_COST",
+            "expr": "source.TOTAL_CLAIM_COST",
+            "displayName": "TOTAL CLAIM COST"
+          },
+          {
+            "name": "PAYER_COVERAGE",
+            "expr": "source.PAYER_COVERAGE",
+            "displayName": "PAYER COVERAGE"
+          },
+          {
+            "name": "REASONCODE",
+            "expr": "source.REASONCODE",
+            "displayName": "REASONCODE"
+          },
+          {
+            "name": "REASONDESCRIPTION",
+            "expr": "source.REASONDESCRIPTION",
+            "displayName": "REASONDESCRIPTION"
+          },
+          {
+            "name": "_rescued_data",
+            "expr": "source._rescued_data",
+            "displayName": "Rescued Data"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "b8c8e65f",
+      "displayName": "organizations",
+      "config": {
+        "version": "1.1",
+        "source": "hospital_records_mavena.default.organizations",
+        "dimensions": [
+          {
+            "name": "Id",
+            "expr": "source.Id",
+            "displayName": "Id"
+          },
+          {
+            "name": "NAME",
+            "expr": "source.NAME",
+            "displayName": "NAME"
+          },
+          {
+            "name": "ADDRESS",
+            "expr": "source.ADDRESS",
+            "displayName": "ADDRESS"
+          },
+          {
+            "name": "CITY",
+            "expr": "source.CITY",
+            "displayName": "CITY"
+          },
+          {
+            "name": "STATE",
+            "expr": "source.STATE",
+            "displayName": "STATE"
+          },
+          {
+            "name": "ZIP",
+            "expr": "source.ZIP",
+            "displayName": "ZIP"
+          },
+          {
+            "name": "LAT",
+            "expr": "source.LAT",
+            "displayName": "LAT"
+          },
+          {
+            "name": "LON",
+            "expr": "source.LON",
+            "displayName": "LON"
+          },
+          {
+            "name": "_rescued_data",
+            "expr": "source._rescued_data",
+            "displayName": "Rescued Data"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "6fd7e4c7",
+      "displayName": "patients",
+      "config": {
+        "version": "1.1",
+        "source": "hospital_records_mavena.default.patients",
+        "dimensions": [
+          {
+            "name": "Id",
+            "expr": "source.Id",
+            "displayName": "Id"
+          },
+          {
+            "name": "BIRTHDATE",
+            "expr": "source.BIRTHDATE",
+            "displayName": "BIRTHDATE"
+          },
+          {
+            "name": "DEATHDATE",
+            "expr": "source.DEATHDATE",
+            "displayName": "DEATHDATE"
+          },
+          {
+            "name": "PREFIX",
+            "expr": "source.PREFIX",
+            "displayName": "PREFIX"
+          },
+          {
+            "name": "FIRST",
+            "expr": "source.FIRST",
+            "displayName": "FIRST"
+          },
+          {
+            "name": "LAST",
+            "expr": "source.LAST",
+            "displayName": "LAST"
+          },
+          {
+            "name": "SUFFIX",
+            "expr": "source.SUFFIX",
+            "displayName": "SUFFIX"
+          },
+          {
+            "name": "MAIDEN",
+            "expr": "source.MAIDEN",
+            "displayName": "MAIDEN"
+          },
+          {
+            "name": "MARITAL",
+            "expr": "source.MARITAL",
+            "displayName": "MARITAL"
+          },
+          {
+            "name": "RACE",
+            "expr": "source.RACE",
+            "displayName": "RACE"
+          },
+          {
+            "name": "ETHNICITY",
+            "expr": "source.ETHNICITY",
+            "displayName": "ETHNICITY"
+          },
+          {
+            "name": "GENDER",
+            "expr": "source.GENDER",
+            "displayName": "GENDER"
+          },
+          {
+            "name": "BIRTHPLACE",
+            "expr": "source.BIRTHPLACE",
+            "displayName": "BIRTHPLACE"
+          },
+          {
+            "name": "ADDRESS",
+            "expr": "source.ADDRESS",
+            "displayName": "ADDRESS"
+          },
+          {
+            "name": "CITY",
+            "expr": "source.CITY",
+            "displayName": "CITY"
+          },
+          {
+            "name": "STATE",
+            "expr": "source.STATE",
+            "displayName": "STATE"
+          },
+          {
+            "name": "COUNTY",
+            "expr": "source.COUNTY",
+            "displayName": "COUNTY"
+          },
+          {
+            "name": "ZIP",
+            "expr": "source.ZIP",
+            "displayName": "ZIP"
+          },
+          {
+            "name": "LAT",
+            "expr": "source.LAT",
+            "displayName": "LAT"
+          },
+          {
+            "name": "LON",
+            "expr": "source.LON",
+            "displayName": "LON"
+          },
+          {
+            "name": "_rescued_data",
+            "expr": "source._rescued_data",
+            "displayName": "Rescued Data"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "d461a9b5",
+      "displayName": "payers",
+      "config": {
+        "version": "1.1",
+        "source": "hospital_records_mavena.default.payers",
+        "dimensions": [
+          {
+            "name": "Id",
+            "expr": "source.Id",
+            "displayName": "Id"
+          },
+          {
+            "name": "NAME",
+            "expr": "source.NAME",
+            "displayName": "NAME"
+          },
+          {
+            "name": "ADDRESS",
+            "expr": "source.ADDRESS",
+            "displayName": "ADDRESS"
+          },
+          {
+            "name": "CITY",
+            "expr": "source.CITY",
+            "displayName": "CITY"
+          },
+          {
+            "name": "STATE_HEADQUARTERED",
+            "expr": "source.STATE_HEADQUARTERED",
+            "displayName": "STATE HEADQUARTERED"
+          },
+          {
+            "name": "ZIP",
+            "expr": "source.ZIP",
+            "displayName": "ZIP"
+          },
+          {
+            "name": "PHONE",
+            "expr": "source.PHONE",
+            "displayName": "PHONE"
+          },
+          {
+            "name": "_rescued_data",
+            "expr": "source._rescued_data",
+            "displayName": "Rescued Data"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "a6675c11",
+      "displayName": "procedures",
+      "config": {
+        "version": "1.1",
+        "source": "hospital_records_mavena.default.procedures",
+        "dimensions": [
+          {
+            "name": "START",
+            "expr": "source.START",
+            "displayName": "START"
+          },
+          {
+            "name": "STOP",
+            "expr": "source.STOP",
+            "displayName": "STOP"
+          },
+          {
+            "name": "PATIENT",
+            "expr": "source.PATIENT",
+            "displayName": "PATIENT"
+          },
+          {
+            "name": "ENCOUNTER",
+            "expr": "source.ENCOUNTER",
+            "displayName": "ENCOUNTER"
+          },
+          {
+            "name": "CODE",
+            "expr": "source.CODE",
+            "displayName": "CODE"
+          },
+          {
+            "name": "DESCRIPTION",
+            "expr": "source.DESCRIPTION",
+            "displayName": "DESCRIPTION"
+          },
+          {
+            "name": "BASE_COST",
+            "expr": "source.BASE_COST",
+            "displayName": "BASE COST"
+          },
+          {
+            "name": "REASONCODE",
+            "expr": "source.REASONCODE",
+            "displayName": "REASONCODE"
+          },
+          {
+            "name": "REASONDESCRIPTION",
+            "expr": "source.REASONDESCRIPTION",
+            "displayName": "REASONDESCRIPTION"
+          },
+          {
+            "name": "_rescued_data",
+            "expr": "source._rescued_data",
+            "displayName": "Rescued Data"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "b4f9feb3",
+      "displayName": "total encounters in each class",
+      "queryLines": [
+        "-- b. For each year, what percentage of all encounters belonged to each encounter class\r\n",
+        "-- (ambulatory, outpatient, wellness, urgent care, emergency, and inpatient)?\r\n",
+        "\r\n",
+        "SELECT YEAR(START) AS `Year`, COUNT(*) AS total_encounters,\r\n",
+        "  ROUND(SUM(CASE WHEN ENCOUNTERCLASS = 'ambulatory' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS ambulatory_percentage,\r\n",
+        "  ROUND(SUM(CASE WHEN ENCOUNTERCLASS = 'outpatient' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS outpatient_percentage,\r\n",
+        "  ROUND(SUM(CASE WHEN ENCOUNTERCLASS = 'wellness' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS wellness_percentage,\r\n",
+        "  ROUND(SUM(CASE WHEN ENCOUNTERCLASS = 'urgentcare' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS urgent_care_percentage,\r\n",
+        "  ROUND(SUM(CASE WHEN ENCOUNTERCLASS = 'emergency' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS emergency_percentage,\r\n",
+        "  ROUND(SUM(CASE WHEN ENCOUNTERCLASS = 'inpatient' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS inpatient_percentage \r\n",
+        "  FROM default.encounters\r\n",
+        "GROUP BY YEAR(START) \r\n",
+        "ORDER BY YEAR(START)"
+      ],
+      "catalog": "hospital_records_mavena",
+      "schema": "default"
+    },
+    {
+      "name": "4085bde5",
+      "displayName": "zero payer coverage",
+      "queryLines": [
+        "SELECT COUNT(*) AS total_encounters, \r\n",
+        "  SUM(CASE WHEN payer_coverage = 0 THEN 1 ELSE 0 END) AS zero_payer_coverage_total,\r\n",
+        "  ROUND(SUM(CASE WHEN payer_coverage = 0 THEN 1 ELSE 0 END) / COUNT(*) * 100.0, 2) AS zero_payer_coverage_percentage\r\n",
+        "  FROM default.encounters"
+      ],
+      "catalog": "hospital_records_mavena",
+      "schema": "default"
+    },
+    {
+      "name": "4666cecf",
+      "displayName": "avg claim cost per payer",
+      "queryLines": [
+        "-- d. What is the average total claim cost for encounters, broken down by payer?\r\n",
+        "SELECT p.name, ROUND(AVG(total_claim_cost), 2) AS average_total_claim_cost FROM encounters e\r\n",
+        "LEFT JOIN payers p\r\n",
+        "ON e.Payer = p.id\r\n",
+        "GROUP BY p.name\r\n",
+        "ORDER BY average_total_claim_cost DESC"
+      ],
+      "catalog": "hospital_records_mavena",
+      "schema": "default"
+    },
+    {
+      "name": "encounters_by_class",
+      "displayName": "Encounters by Class Distribution",
+      "queryLines": [
+        "SELECT\n",
+        "  ENCOUNTERCLASS AS class,\n",
+        "  COUNT(*) AS encounter_count\n",
+        "FROM\n",
+        "  hospital_records_mavena.default.encounters\n",
+        "GROUP BY\n",
+        "  ENCOUNTERCLASS\n",
+        "ORDER BY\n",
+        "  encounter_count DESC"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "24d3f85c",
+      "displayName": "Data Visualization",
+      "layout": [
+        {
+          "widget": {
+            "name": "class_percentages_line",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "b4f9feb3",
+                  "fields": [
+                    {
+                      "name": "Year",
+                      "expression": "`Year`"
+                    },
+                    {
+                      "name": "ambulatory_percentage",
+                      "expression": "`ambulatory_percentage`"
+                    },
+                    {
+                      "name": "outpatient_percentage",
+                      "expression": "`outpatient_percentage`"
+                    },
+                    {
+                      "name": "wellness_percentage",
+                      "expression": "`wellness_percentage`"
+                    },
+                    {
+                      "name": "urgent_care_percentage",
+                      "expression": "`urgent_care_percentage`"
+                    },
+                    {
+                      "name": "emergency_percentage",
+                      "expression": "`emergency_percentage`"
+                    },
+                    {
+                      "name": "inpatient_percentage",
+                      "expression": "`inpatient_percentage`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Encounter Class Percentages by Year",
+                "showTitle": true
+              },
+              "mark": {
+                "size": 0
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "Year",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fields": [
+                    {
+                      "fieldName": "ambulatory_percentage",
+                      "displayName": "Ambulatory"
+                    },
+                    {
+                      "fieldName": "outpatient_percentage",
+                      "displayName": "Outpatient"
+                    },
+                    {
+                      "fieldName": "wellness_percentage",
+                      "displayName": "Wellness"
+                    },
+                    {
+                      "fieldName": "urgent_care_percentage",
+                      "displayName": "Urgent Care"
+                    },
+                    {
+                      "fieldName": "emergency_percentage",
+                      "displayName": "Emergency"
+                    },
+                    {
+                      "fieldName": "inpatient_percentage",
+                      "displayName": "Inpatient"
+                    }
+                  ],
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "none",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    }
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 7,
+            "y": 0,
+            "width": 5,
+            "height": 11
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_claim_cost_by_payer",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4666cecf",
+                  "fields": [
+                    {
+                      "name": "average_total_claim_cost",
+                      "expression": "`average_total_claim_cost`"
+                    },
+                    {
+                      "name": "name",
+                      "expression": "`name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Average Claim Cost by Payer",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "average_total_claim_cost",
+                  "format": {
+                    "type": "number-currency",
+                    "abbreviation": "none",
+                    "currencyCode": "USD",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "name",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "x-reversed"
+                    }
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 7,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "encounters_pie",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "encounters_by_class",
+                  "fields": [
+                    {
+                      "name": "encounter_count",
+                      "expression": "`encounter_count`"
+                    },
+                    {
+                      "name": "class",
+                      "expression": "`class`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "mark": {
+                "size": 0
+              },
+              "frame": {
+                "title": "Encounter Distribution by Class",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "encounter_count",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "compact"
+                  }
+                },
+                "color": {
+                  "fieldName": "class",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 7,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "zero_payer_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4085bde5",
+                  "fields": [
+                    {
+                      "name": "zero_payer_coverage_percentage",
+                      "expression": "`zero_payer_coverage_percentage`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Encounters with Zero Payer Coverage",
+                "showTitle": true,
+                "contentAlignment": "center"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "zero_payer_coverage_percentage",
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "none",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 2
+                    }
+                  },
+                  "formatTemplate": "{{ @formatted }}%",
+                  "displayName": "Zero Payer Coverage"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 7,
+            "y": 11,
+            "width": 5,
+            "height": 5
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "5e066d5b",
+      "displayName": "Global Filters",
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
