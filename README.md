@@ -4,6 +4,32 @@ An end-to-end data analytics project analyzing synthetic patient records from Ma
 
 ---
 
+## The situation
+
+You've just been hired as a Data Analyst for a healthcare analytics consulting firm that helps hospitals use data to improve patient care and reduce costs
+
+You're working with Massachusetts General Hospital to help prepare their annual performance report
+
+You've been asked to analyze patient encounters, costs, coverage, and behavior trends to support planning and improve care and operations
+
+## 🎯 Project Objectives
+
+This project analyzes hospital patient encounter data to surface key operational and clinical insights. Core questions explored include:
+
+1. Encounters Overview: trends in encounter volume, types and lengths
+- Which **procedures** are most frequent and most costly?
+- What are the **demographic trends** across the patient population?
+
+2. Cost & Coverage Insights: insurance coverage, procedures and claim costs
+- Which **organizations** handle the highest patient volume?
+- How does **payer coverage** relate to total claims and patient costs?
+
+3. Patient Behavior Analysis: visit patterns, length of stay and readmissions
+- How many patients have been **admitted or readmitted** over time?
+- What is the average **length of stay** for patients?
+
+---
+
 ## 📊 Dashboard Preview
 
 ![Hospital Records Dashboard](src/hospital_data_records_visualization.png)
@@ -33,19 +59,6 @@ Hospital-Records-Analysis-MavenA/
     ├── hospital_analytics_answers.ipynb           # Analysis notebook with answers & visualizations
     └── hospital_data_records_visualization.png    # Dashboard screenshot
 ```
-
----
-
-## 🎯 Project Objectives
-
-This project analyzes hospital patient encounter data to surface key operational and clinical insights. Core questions explored include:
-
-- How many patients have been **admitted or readmitted** over time?
-- What is the average **length of stay** for patients?
-- Which **procedures** are most frequent and most costly?
-- How does **payer coverage** relate to total claims and patient costs?
-- What are the **demographic trends** across the patient population?
-- Which **organizations** handle the highest patient volume?
 
 ---
 
